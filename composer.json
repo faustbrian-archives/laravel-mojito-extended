@@ -1,0 +1,52 @@
+{
+    "name": "konceiver/laravel-mojito-extended",
+    "description": ":package_description",
+    "keywords": [
+        "konceiver",
+        "laravel-mojito-extended"
+    ],
+    "homepage": "https://github.com/konceiver/laravel-mojito-extended",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "brian@konceiver.dev",
+            "homepage": "https://konceiver.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "illuminate/contracts": "^7.0|^8.0",
+        "illuminate/support": "^7.0|^8.0",
+        "nunomaduro/laravel-mojito": "^0.2.6"
+    },
+    "require-dev": {
+        "konceiver/laravel-stan": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Konceiver\\MojitoExtended\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Konceiver\\MojitoExtended\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest --min=100 --coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Konceiver\\MojitoExtended\\Providers\\MojitoExtendedServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
