@@ -19,7 +19,8 @@
         "php": "^7.4|^8.0",
         "illuminate/contracts": "^7.0|^8.0",
         "illuminate/support": "^7.0|^8.0",
-        "nunomaduro/laravel-mojito": "^0.2.6"
+        "nunomaduro/laravel-mojito": "^0.2.6",
+        "spatie/laravel-package-tools": "^1.9"
     },
     "require-dev": {
         "konceiver/laravel-stan": "^1.1"
